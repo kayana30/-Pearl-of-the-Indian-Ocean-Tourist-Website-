@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tourist Details</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <style>
+    *{
+      padding: 0;
+      margin:0;
+      font-family: sans-serif;
+    }
+    body{
+      font-family: sans-serif;
+      font-size:14px;
+      min-height:100vh;
+      width:100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding:50px;
+      padding-top: 136px;
+     background: url(photo.jpeg);
+    }
+    .main{
+      width:60%; 
+    }
+    .main h1{
+      font-size: 40px;
+      text-align: center;
+      margin:40px 0;
+      color: red;
+    }
+    .main h2{
+      font-size: 18px;
+      margin: 22px 0 2px 0;
+    }
+    .main input, select{
+      font-size: 13px;
+      padding: 15px 10px;
+      width:100%;
+      border-radius: 5px;
+    }
+    .main button{
+      padding:10px 60px;
+      margin: 40px 0 70px 0;
+      border-radius: 5px;
+      background: red;
+      border: none;
+      cursor: pointer;
+      color: white;
+      font-family: sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+      margin-top: 0px;
+    }
+
+
+  </style>
+  <script type="text/javascript">
+    function validate() {
+      if(document.myform.firstname.value==""){
+        alert("please provide your First name here");
+        document.myform.firstname.focus();
+        return false();
+    }
+    if(document.myform.lastname.value==""){
+        alert("please provide your First name here");
+        document.myform.lastname.focus();
+        return false();
+    }
+    if(document.myform.Email.value==""){
+        alert("please provide your Email here");
+        document.myform.Email.focus();
+        return false();
+    }
+    if(document.myform.visitplacenames.value=="-1"){
+        alert("select visit place here");
+        return false();
+    }
+
+    }
+  </script>
+  </head>
+<body>
+  
+  
+    <nav>
+      <div class="logo">Tourist <span>Places</span></div>
+      <div class="menu">
+      <a href="index.html" active>Home</a>
+      <a href="about.html">About Us</a>
+      <a href="gallery.html">Tourist places information</a>
+      <a href="image.html">Gallery</a>
+      <a href="todo.html">To-Do List</a>
+      <a href="contactus.html">Contact Us</a>
+      </div>
+    
+        <div class="icon">
+        <i class="fa fa-search"></i>
+        <a href="#">Login</a>
+      </div>
+    </nav>
+    <div class="main">
+    <div class="card-body">
+  <h1>Tourist Details</h1> 
+  <form action="#" method="post" name="myform" onsubmit="return validate()">
+      <h2>First Name</h2>
+    <input type="text" name="firstname" placeholder="Enter your First Name here">
+    <h2>Last Name</h2>
+    <input type="text" name="lastname" placeholder="Enter your Last Name here">
+    <h2>Email</h2>
+    <input type="text" name="Email" placeholder="Enter your Email here">
+    <h2>Contact No</h2>
+    <input type="text" name="Contactno" placeholder="Enter your Contact No here">
+    
+    <h2>Gender:</h2>
+    <input type="radio" name="gender" checked>
+    <span class="male">Male</span>
+    <input type="radio" name="gender">
+    <span class="female">Female</span>
+    <h2>Visit place names:</h2>
+    <select name="visitplacenames">
+      <option value="-1"selected>Select</option>
+      <option value="1">Sigiriya</option>
+      <option value="2">Nuwara Eliya</option>
+      <option value="3">Beach</option>
+      <option value="4">Yala National park</option>
+      <option value="5">Sinharaja Forest</option>
+      <option value="6">Dambulla Cave</option>
+      <option value="7">Dalada Maligawa</option>
+      <option value="8">Peradeniya</option>
+      <option value="9">Museum</option>
+      <option value="10">other</option>
+</select>
+<br><br> <br>
+    <button type="submit">Submit</button>
+  </form> 
+  <iframe src="https://www.google.com/maps/d/embed?mid=1D44vXPBwvTJAYBpyLVbPYiOKKVc&msa=0&ie=UTF8&t=m&ll=7.436347679461048%2C80.93628&spn=2.478859%2C1.757813&output=embed&z=8" width="700" height="650" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+</body>
+</html>
