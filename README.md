@@ -11,7 +11,8 @@ I have created a website that displays tourist information about Sri Lanka. My w
 
 ![To-Do List](https://github.com/kayana30/-Pearl-of-the-Indian-Ocean-Tourist-Website-/assets/90521483/41d0653b-d586-48bf-af8e-a1be72f96eca)
 
-![Contact Us ](https://github.com/kayana30/-Pearl-of-the-Indian-Ocean-Tourist-Website-/assets/90521483/0e399a34-593f-44e8-bd75-dd147cb3da14)
+![Contact Us ](https://github.com/kayana30/-Pearl-of-the-Indian-Ocean-Tourist-Website-/assets/90521483/7ad8d38c-1d66-4320-947d-3150334cca7a)
+
 
 
 
